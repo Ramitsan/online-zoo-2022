@@ -54,7 +54,7 @@ gulp.task("css", function () {
         imagemin.svgo()
       ]))
   
-      .pipe(gulp.dest("source/assets"));
+      .pipe(gulp.dest("source/assets/"));
   
   });
   
@@ -68,7 +68,7 @@ gulp.task("css", function () {
     return gulp.src("source/assets/{icon-*,htmlacademy*}.svg")
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename("sprite_auto.svg"))
-      .pipe(gulp.dest("build/img"));
+      .pipe(gulp.dest("build/assets"));
   });
   
   gulp.task("html", function () {
@@ -82,7 +82,7 @@ gulp.task("css", function () {
   gulp.task("copy", function () {
     return gulp.src([
       "source/assets/fonts/*.{woff,woff2}",
-      "source/assets/img/**",
+      "source/assets/**",
       "source/js/**",
       "source//*.ico"
       ], {
