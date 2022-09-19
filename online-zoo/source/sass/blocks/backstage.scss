@@ -1,0 +1,45 @@
+.backstage {
+  padding-top: 100px;
+  padding-bottom: 86px;
+  background-image: url("../assets/img/flower_bg_desktop.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 204px 613px;
+}
+
+.backstage__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backstage__img {
+  margin-right: 86px;
+  margin-top: 29px;
+}
+
+.backstage__info {
+  width: 465px;
+  text-align: left;
+}
+
+.backstage__title {
+  @include second-level-headings ();
+  color: $main-text-color;
+  margin-bottom: 22px;
+}
+
+.backstage__subtitle {
+  @include fourth-level-headings ();
+  color: $main-text-color;
+  margin-top: 53px;
+  margin-bottom: 34px;
+}
+
+.backstage__text--two br {
+  display: none;
+}
