@@ -1,3 +1,4 @@
+// styles for index page
 .pick-and-feed {
   background: $orange-gradient-bg;
   width: 100%;
@@ -76,6 +77,7 @@
 
 .pick-and-feed__item:not(:last-of-type) {
   margin-right: 130px;
+
   &::after {
     content: "";
     position: absolute;
@@ -137,4 +139,22 @@
   margin-top: 56px;
 }
 
+// styles for page Donate
+.pick-and-feed__container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
 
+.pick-and-feed__slogan {
+  @include third-level-headings ();
+  color: $white;
+  text-transform: uppercase;
+}
+
+.pick-and-feed__information {
+  width: 100%;
+  padding-right: 5px;
+  text-align: left;
+  color: $white;
+}
