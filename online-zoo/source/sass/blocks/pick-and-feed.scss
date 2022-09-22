@@ -140,6 +140,9 @@
 }
 
 // styles for page Donate
+.pick-and-feed__wrapper--donate {
+  padding: 40px 92px 62px;
+}
 .pick-and-feed__container {
   width: 100%;
   max-width: 1160px;
@@ -148,8 +151,10 @@
 
 .pick-and-feed__slogan {
   @include third-level-headings ();
+  width: 788px;
   color: $white;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .pick-and-feed__information {
@@ -157,4 +162,14 @@
   padding-right: 5px;
   text-align: left;
   color: $white;
+}
+
+.pick-and-feed__inforamtion-title {
+  @include third-level-headings ();
+  color: $orange;
+  text-align: left;
+}
+
+.pick-and-feed__subtitle--donate {
+  margin-bottom: 0;
 }

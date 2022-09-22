@@ -1,0 +1,178 @@
+.donate-form {
+    padding-bottom: 20px;
+}
+
+.donate-form__title {
+    text-align: left;
+    font-family: $font-roboto;
+    font-size: 16px;
+    line-height: 140%;
+    color: $black
+}
+
+.donate-form__progress {
+    position: relative;
+    width: 976px;
+    height: 27px;
+    background-color: #404950;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.donate-form__line {
+    position: absolute;
+    left: 3%;
+    top: 45%;
+    width: 915px;
+    height: 2px;
+    background-color: #72828E;
+}
+
+.donate-form__container {
+    width: 945px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate-form__item {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.donate-form__label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.donate-form__radio-input+.donate-form__label::before {
+    content: "";
+    position: absolute;
+    left: 36%;
+    top: 36%;
+    width: 10px;
+    height: 10px;
+    background-color: $yellow;
+    border-radius: 50%;
+}
+
+.donate-form__radio-input:checked+.donate-form__label::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -2%;
+    top: -2%;
+    background-image: url("../../assets/icons/roller_icon.png");
+    background-size: 40px 40px;
+    z-index: 1000;
+}
+
+.donate-form__price {
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    font-family: $font-roboto;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.donate-form__radio-input:checked~.donate-form__price {
+    color: $orange;
+}
+
+.donate-form__period {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-form__number-input {
+    width: 268px;
+    height: 54px;
+    background-color: transparent;
+    border: 1px solid #929699;
+}
+
+.donate-form__number-input:focus,
+.donate-form__number-input:hover{
+    outline: 0;
+    border: 1px solid $green;
+}
+
+.donate-form__label-number {
+    position: relative;
+}
+
+.donate-form__label-number::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: 0px;
+    right: 10px;
+    background-image: url('../../assets/icons/icon-dollar.png');
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+}
+
+.donate-form__number-input:focus .donate-form__label-number::after,
+.donate-form__number-input:hover+.donate-form__label-number::after {
+    background-image: url("../../assets/icons/icon-dollar-green.png");
+    background-size: 10px 20px;
+    z-index: 100;
+}
+
+/*спрятать стрелки у input tupe="number"*/
+/* Chrome, Safari, Edge, Opera */
+.donate-form__number-input::-webkit-outer-spin-button,
+.donate-form__number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.donate-form input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.donate-form__period {
+    display: flex;
+}
+
+.donate-form__period-item {
+    display: flex;
+    margin-right: 20px;
+}
+
+.donate-form__period-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 84px;
+    height: 22px;
+    text-align: left;
+}
+
+.donate-form__period-label::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $orange;
+    border-radius: 50%;
+}
+
+.donate-form__period-input:checked + .donate-form__period-label::before {
+    background-color: $green;
+    border: 1px solid $green;
+}
