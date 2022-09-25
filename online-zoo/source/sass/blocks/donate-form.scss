@@ -70,7 +70,7 @@
     height: 40px;
     left: -2%;
     top: -2%;
-    background-image: url("../../assets/icons/roller_icon.png");
+    background-image: url("../assets/icons/roller_icon.png");
     background-size: 40px 40px;
     z-index: 1000;
 }
@@ -119,14 +119,14 @@
     height: 20px;
     top: 0px;
     right: 10px;
-    background-image: url('../../assets/icons/icon-dollar.png');
+    background-image: url('../assets/icons/icon-dollar.png');
     background-size: 10px 20px;
     background-repeat: no-repeat;
 }
 
 .donate-form__number-input:focus .donate-form__label-number::after,
 .donate-form__number-input:hover+.donate-form__label-number::after {
-    background-image: url("../../assets/icons/icon-dollar-green.png");
+    background-image: url("../assets/icons/icon-dollar-green.png");
     background-size: 10px 20px;
     z-index: 100;
 }
