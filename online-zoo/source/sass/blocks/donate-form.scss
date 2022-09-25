@@ -1,8 +1,9 @@
 .donate-form {
-    padding-bottom: 20px;
+    padding-bottom: 13px;
 }
 
 .donate-form__title {
+    margin-left: 4px;
     text-align: left;
     font-family: $font-roboto;
     font-size: 16px;
@@ -17,7 +18,7 @@
     background-color: #404950;
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 98px;
 }
 
 .donate-form__line {
@@ -76,8 +77,8 @@
 
 .donate-form__price {
     position: absolute;
-    top: 45px;
-    left: -10px;
+    top: 52px;
+    left: -15px;
     font-family: $font-roboto;
     font-size: 26px;
     font-weight: 500;
@@ -96,6 +97,7 @@
 .donate-form__number-input {
     width: 268px;
     height: 54px;
+    padding-left: 8px;
     background-color: transparent;
     border: 1px solid #929699;
 }
@@ -147,15 +149,18 @@
 }
 
 .donate-form__period-item {
+    width: 134px;
     display: flex;
-    margin-right: 20px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .donate-form__period-label {
     position: relative;
     display: block;
     cursor: pointer;
-    width: 84px;
+    width: 24px;
     height: 22px;
     text-align: left;
 }
@@ -163,7 +168,7 @@
 .donate-form__period-label::before {
     content: "";
     position: absolute;
-    left: -20px;
+    left: -28px;
     top: 2px;
     width: 16px;
     height: 16px;

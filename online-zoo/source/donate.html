@@ -15,7 +15,7 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(max-width: 999px)" srcset="assets/img/logo_footer_tablet.png">
+          <!-- <source media="(max-width: 999px)" srcset="assets/img/logo_footer_tablet.png"> -->
           <img src="assets/img/logo_footer_desktop.png" alt="PetStory online logo">
         </picture>
       </a>
@@ -41,9 +41,8 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Contact us</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                target="_blank">Designed by ©</a>
+            <li class="main-nav__item main-nav__item--designed">
+              <a class="main-nav__link" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by ©</a>
             </li>
           </ul>
         </div>
@@ -145,7 +144,7 @@
                   <label class="donate-form__period-label" for="monthly">Monthly</label>                  
                 </p>
                 <p class="donate-form__period-item">
-                  <input class="donate-form__period-input visually-hidden" type="radio" value="once" id="once" name="period-input">
+                  <input class="donate-form__period-input visually-hidden" type="radio" value="once" id="once" name="period-input" checked>
                   <label class="donate-form__period-label" for="once">Once</label>                  
                 </p>
               </div>

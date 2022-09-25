@@ -1,11 +1,11 @@
 .pets {
-  padding-top: 76px;
+  padding-top: 74px;
   padding-bottom: 115px;
   background-image: url("../assets/img/palm_bg_desktop.png"), url("../assets/img/strelitzia_desktop.png");
   background-repeat: no-repeat;
   background-position: -7px 722px, 1225px 907px;
   background-size: 292px 460px, 368px 275px;
-  background-position: left bottom, right bottom;
+  background-position: left -8px bottom, right -9px bottom;
 }
 
 .pets__wrapper {
@@ -394,11 +394,11 @@
 }
 
 .pets__buttons {
-  width: 1320px;
+  width: 1322px;
   position: absolute;
   top: 44%;
   left: -7%;
-  margin-top: -31px;
+  margin-top: -33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -431,8 +431,8 @@
     background-position: center;
     width: 18px;
     height: 10px;
-    top: 27px;
-    left: 19px;
+    top: 25px;
+    left: 21px;
   }
 }
 
@@ -446,8 +446,8 @@
     background-position: center;
     width: 18px;
     height: 10px;
-    top: 27px;
-    left: 19px;
+    top: 25px;
+    left: 21px
   }
 }
 

@@ -3,7 +3,7 @@
   padding-bottom: 86px;
   background-image: url("../assets/img/flower_bg_desktop.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right -8px bottom 24px;
   background-size: 204px 613px;
 }
 
@@ -19,7 +19,7 @@
 
 .backstage__img {
   margin-right: 86px;
-  margin-top: 29px;
+  margin-top: 26px;
 }
 
 .backstage__info {
@@ -37,7 +37,7 @@
   @include fourth-level-headings ();
   color: $main-text-color;
   margin-top: 53px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .backstage__text--two br {

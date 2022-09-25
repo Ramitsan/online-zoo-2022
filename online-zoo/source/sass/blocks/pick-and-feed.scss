@@ -3,7 +3,7 @@
   background: $orange-gradient-bg;
   width: 100%;
   padding-top: 70px;
-  padding-bottom: 101px;
+  padding-bottom: 100px;
 }
 
 .pick-and-feed__wrapper {
@@ -13,7 +13,7 @@
   background: $opacity-bg;
   border-radius: 20px;
   padding-top: 40px;
-  padding-bottom: 58px;
+  padding-bottom: 59px;
 }
 
 .pick-and-feed__title {
@@ -42,7 +42,7 @@
 
 .pick-and-feed__text {
   width: 870px;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-bottom: 6px;
 }
 
@@ -61,7 +61,7 @@
   align-items: flex-start;
   list-style: none;
   margin-top: 40px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   padding-left: 0px;
 }
 
@@ -87,7 +87,7 @@
     background-position: center;
     width: 71px;
     height: 37px;
-    top: 24%;
+    top: 60px;
     left: 200px;
   }
 }
@@ -140,8 +140,12 @@
 }
 
 // styles for page Donate
-.pick-and-feed__wrapper--donate {
-  padding: 40px 92px 62px;
+.pick-and-feed--donate  {
+  padding-top: 5px;
+  padding-bottom: 180px;
+}
+.pick-and-feed__wrapper--donate {  
+  padding: 40px 92px 46px;
 }
 .pick-and-feed__container {
   width: 100%;
@@ -151,14 +155,16 @@
 
 .pick-and-feed__slogan {
   @include third-level-headings ();
-  width: 788px;
+  width: 100%;
   color: $white;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .pick-and-feed__information {
   width: 100%;
+  margin-top: 10px;
   padding-right: 5px;
   text-align: left;
   color: $white;
@@ -168,8 +174,16 @@
   @include third-level-headings ();
   color: $orange;
   text-align: left;
+  margin-top: 44px;
+  margin-bottom: 59px;
+}
+
+.pick-and-feed__title--donate {
+  margin-left: -12px;
 }
 
 .pick-and-feed__subtitle--donate {
   margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 22px;
 }

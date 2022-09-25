@@ -3,18 +3,23 @@
 }
 
 .main-nav {
-  width: 530px;
+  width: 100%;
   position: relative;
+  padding-left: 62px;
 }
 
 .main-nav__list {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
-  padding-left: 3px;
+  padding-left: 0;
   margin: 10px 0;
+}
+
+.main-nav__item {
+  margin-right: 58px;
 }
 
 .main-nav__link {
@@ -25,6 +30,11 @@
   &:active {
     opacity: 0.8;
   }
+}
+
+.main-nav__item--designed {
+  margin-right: 0px;
+  margin-left: auto;
 }
 
 .main-nav__link--active {
