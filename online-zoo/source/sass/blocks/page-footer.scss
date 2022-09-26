@@ -263,8 +263,11 @@
   line-height: 130%;
   color: $white;
   padding-bottom: 10px;
-  &:active {
+  &:hover {
     color: $green;
     text-decoration: underline;
+  }
+  &:active {
+    opacity: 0.8;
   }
 }
