@@ -76,7 +76,7 @@
             <img class="amount__icon" src="assets/icons/donate-panda-widget.svg" alt="panda icon">
           </div>
 
-          <form action="" class="pick-and-feed__form donate-form">
+          <form action="#" class="pick-and-feed__form donate-form">
             <p class="donate-form__title">Amount</p>
 
             <div class="donate-form__progress">
@@ -127,16 +127,15 @@
                   <p class="donate-form__item">
                     <input class="donate-form__radio-input visually-hidden" type="radio" value="25" id="$25"
                       name="donate-input">
-                    <label class="donate-form__label" for="$25"></label>
+                    <label class="donate-form__label" for="$25"></label>                    
                     <span class="donate-form__price">$25</span>
                   </p>       
                 
               </div>
             </div>
 
-            <div class="donate-form__another-amount">
-              
-                <input class="donate-form__number-input" type="number" id="another-amount" value="" name="another-amount" min="1" max="9999" maxlength="4" placeholder="Another amount">
+            <div class="donate-form__another-amount">              
+                <input class="donate-form__number-input" type="number" id="another-amount" name="another-amount" min="1" max="9999" maxlength="4" placeholder="Another amount" oninput="if (value.length>4) value = value.slice(0,4)">
                 <label for="another-amount" class="donate-form__label-number"></label>             
               <div class="donate-form__period">
                 <p class="donate-form__period-item">
@@ -175,7 +174,7 @@
         <form action="" method="POST" class="page-footer__subscribe-form">
           <p class="page-footer__subscribe-container">
             <label class="visually-hidden" for="user-email">Email</label>
-            <input type="email" id="user-email" name="email" placeholder="Enter your email">
+            <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
             <button class="page-footer__subscribe-submit btn btn--submit" type="submit">Submit</button>
           </p>
         </form>
@@ -195,8 +194,7 @@
       </div>
       <div class="page-footer__nav">
         <ul class="page-footer__nav-list">
-          <li class="page-footer__nav-item"><a class="page-footer__nav-link page-footer__nav-link--active"
-              href="index.html">About</a></li>
+          <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="index.html">About</a></li>
           <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Map</a></li>
           <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Zoos</a></li>
           <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Contact us</a></li>
