@@ -57,22 +57,45 @@
 }
 
 .testimonials__controls {
-  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 9px;
+  margin-bottom: 32px;
 }
 
-.testimonials__link {
-  display: inline-block;
-  align-self: flex-start;
+.testimonials__input-wrapper {
+  flex: 0 0 1;
+  position: relative;
+  width: 600px;
+  height: 6px;
   border-radius: 5px;
-  padding: 15px 84px;
-  margin-bottom: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+    z-index: -1;
+    margin: -1px;
+    background: $pink-gradient;
+  }
 }
 
 .testimonials__controls input[type=range] {
-  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #F5F7F6;
+  box-sizing: border-box;
+  background-clip: padding-box;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -89,9 +112,11 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 5px;
   cursor: pointer;
   -webkit-appearance: none;
+
   &:hover {
     background: $green;
   }
+
   &:active {
     opacity: 0.7;
   }
@@ -110,9 +135,11 @@ input[type=range]::-moz-range-thumb {
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+
   &:hover {
     background: $green;
   }
+
   &:active {
     background: $green;
     opacity: 0.7;
@@ -120,5 +147,9 @@ input[type=range]::-moz-range-thumb {
 }
 
 .testimonials__link {
-  margin-bottom: 3px;
+  display: inline-block;
+  align-self: flex-start;
+  border-radius: 5px;
+  padding: 15px 84px;
+  margin-bottom: 2px;
 }
