@@ -455,3 +455,195 @@
   border-radius: 25px;
   padding: 17px 56px;
 }
+
+@media (max-width: $small-desktop-width) {
+  .pets {
+    padding-top: 80px;
+    padding-bottom: 156px;
+    background-image: url("../assets/img/palm_bg_small-desktop.png"), url("../assets/img/strelitzia_small-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 194px 202px, 241px 180px;
+  }
+  .pets__item {
+    width: 294px;
+    margin-bottom: 88px;
+  }
+  .pets__slider {
+    margin-bottom: 6px;
+  }
+  .pets__buttons {
+    width: 295px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    margin-left: -147px;
+    margin-top: -63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .pets {
+    padding-top: 48px;
+    padding-bottom: 115px;
+    background-image: url("../assets/img/palm_bg_tablet.png"), url("../../assets/img/strelitzia_desktop.png");
+    background-size: 134px 202px, 175px 131px;
+  }
+  .pets__wrapper {
+    max-width: 600px;
+  }
+  .pets__slider {
+    height: 826px;
+    align-items: flex-start;
+  }
+  .pets__list {
+    overflow: hidden;
+  }
+  .pets__item:nth-child(3n) {
+    margin-right: 25px;
+  }
+  .pets__item {
+    width: 285px;
+  }
+  .pets__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .pets__info {
+    margin-left: 11px;
+  }
+  .pets__info {
+    &::before {
+      top: 0;
+      right: 8px;
+    }
+  }
+  .pets__info--panda {
+    &::before {
+      background-image: url("../assets/icons/banana-bamboo_icon_tablet.png");
+      background-size: 26px 29px;
+      width: 26px;
+      height: 29px;
+    }
+  }
+  .pets__info--eagles {
+    &::before {
+      background-image: url("../assets/icons/meet-fish_icon_tablet.png");
+      background-size: 39px 31px;
+      width: 39px;
+      height: 31px;
+      top: -2px;
+      right: 3px;
+    }
+  }
+  .pets__info--gorillas {
+    &::before {
+      background-image: url("../assets/icons/banana-bamboo_icon_tablet.png");
+      background-size: 26px 29px;
+      width: 26px;
+      height: 29px;
+    }
+  }
+  .pets__info--sloth {
+    &::before {
+      background-image: url("../assets/icons/banana-bamboo_icon_tablet.png");
+      background-size: 26px 29px;
+      width: 26px;
+      height: 29px;
+    }
+  }
+  .pets__info--cheetahs {
+    &::before {
+      background-image: url("../assets/icons/meet-fish_icon_tablet.png");
+      background-size: 39px 31px;
+      width: 39px;
+      height: 31px;
+      top: -2px;
+      right: 3px;
+    }
+  }
+  .pets__info--penguins {
+    &::before {
+      background-image: url("../assets/icons/meet-fish_icon_tablet.png");
+      background-size: 39px 31px;
+      width: 39px;
+      height: 31px;
+      top: -2px;
+      right: 3px;
+    }
+  }
+  .pets__info--squirrel {
+    &::before {
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .pets__info--boar::before,
+  .pets__info--bison::before,
+  .pets__info--deer::before {
+    background-size: 40px 33px;
+    width: 40px;
+    height: 33px;
+  }
+  .pets__name {
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 130%;
+  }
+  .pets__home-country {
+    font-size: 11px;
+  }
+  .pets__buttons {
+    width: 154px;
+    top: 47%;
+    left: 61%;
+    margin-left: -143px;
+    margin-top: -60px;
+  }
+  .pets__link {
+    padding: 16px 56px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .pets {
+    padding-top: 24px;
+    padding-bottom: 60px;
+    background-image: url("../assets/img/palm_bg_mobile.png"), url("../assets/img/strelitzia_mobile.png");
+    background-size: 58px 72px, 68px 71px;
+  }
+  .pets__wrapper {
+    max-width: 300px;
+  }
+  .pets__slider {
+    height: 100%;
+  }
+  .pets__buttons {
+    display: none;
+  }
+  .pets__list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .pets__item {
+    margin-bottom: 14px;
+    margin-right: 25px;
+  }
+  .pets__item:nth-child(2n) {
+    margin-right: 25px;
+  }
+  .pets__item--cheetahs,
+  .pets__item--penguins {
+    display: none;
+  }
+  .pets__link {
+    display: inline-block;
+    margin-top: -8px;
+    padding: 16px 52px;
+  }
+}
+

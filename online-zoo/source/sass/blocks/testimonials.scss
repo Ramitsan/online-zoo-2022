@@ -153,3 +153,94 @@ input[type=range]::-moz-range-thumb {
   padding: 15px 84px;
   margin-bottom: 2px;
 }
+
+@media (max-width: $small-desktop-width) {
+  .testimonials {
+    padding-top: 65px;
+    padding-bottom: 138px;
+    background-image: url("../assets/img/leav_bg_small-desktop.png");
+    background-position: right 604px;
+    background-size: 196px 325px;
+  }
+  .testimonials__wrapper {
+    max-width: 940px;
+  }
+  .testimonials__title {
+    margin-bottom: 8px;
+  }
+  .testimonials__list {
+    padding: 2px;
+  }
+  .testimonials__controls {
+    margin-bottom: 44px;
+  }
+  .testimonials__controls input[type=range] {
+    width: 390px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    width: 75px;
+    height: 6px;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 75px;
+    height: 6px;
+  }
+  .testimonials__link {
+    padding: 15px 84px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .testimonials {
+    padding-top: 25px;
+    padding-bottom: 77px;
+    background-image: url("../assets/img/leav_bg_tablet.png");
+    background-position: right 533px;
+    background-size: 116px 204px;
+  }
+  .testimonials__wrapper {
+    max-width: 600px;
+    align-items: center;
+  }
+  .testimonials__list {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 22px;
+    height: 363px;
+  }
+  .testimonials__controls {
+    display: none;
+  }
+  .testimonials__link {
+    margin-top: 22px;
+    align-self: center;
+    padding: 15px 54px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .testimonials {
+    padding-bottom: 58px;
+    background-image: url("../assets/img/leav_bg_mobile.png");
+    background-position: right 516px;
+    background-size: 51px 94px;
+  }
+  .testimonials__wrapper {
+    max-width: 97%;
+  }
+  .testimonials__title {
+    font-size: 24px;
+    line-height: 120%;
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .testimonials__list {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    padding: 2px 7px;
+  }
+  .testimonials__link {
+    margin-top: 20px;
+    padding: 14px 54px;
+  }
+}

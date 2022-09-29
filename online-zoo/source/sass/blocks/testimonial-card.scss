@@ -97,3 +97,45 @@
   line-height: 120%;
   color: $gray;
 }
+
+@media (max-width: $small-desktop-width) {
+  .testimonial-card {
+    width: 293px;
+    height: 387px;
+    margin-right: 32px;
+  }
+  .testimonial-card__text {
+    width: 260px;
+    font-size: 16px;
+  }
+  .testimonial-card blockquote {
+    margin: 12px 15px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .testimonial-card {
+    width: 100%;
+    height: 104px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .testimonial-card__text {
+    width: 100%;
+  }
+  .testimonial-card blockquote {
+    height: 84px;
+    overflow: hidden;
+    margin: 13px 10px 8px 11px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+  .testimonial-card blockquote {
+    margin: 10px 10px 10px 12px;
+  }
+}
+
