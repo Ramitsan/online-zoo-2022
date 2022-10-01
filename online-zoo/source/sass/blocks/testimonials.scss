@@ -170,9 +170,14 @@ input[type=range]::-moz-range-thumb {
   }
   .testimonials__list {
     padding: 2px;
+    margin-top: 21px;
   }
   .testimonials__controls {
-    margin-bottom: 44px;
+    margin-bottom: 52px;
+  }
+  .testimonials__input-wrapper {
+    width: 390px;
+    margin-left: -10px;
   }
   .testimonials__controls input[type=range] {
     width: 390px;

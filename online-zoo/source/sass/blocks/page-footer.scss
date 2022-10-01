@@ -286,11 +286,15 @@
   .page-footer__logo {
     flex-grow: 0;
     margin: 0;
-    margin-left: 15px;
+    margin-top: 22px;
   }
+  .page-footer__logo-image {
+    width: 84px;
+    height: 54px;
+}
   .page-footer__subscribe {
     padding-top: 23px;
-    margin-right: 20px;
+    margin-right: 33px;
   }
   .page-footer__subscribe-container {
     margin-top: 14px;
@@ -301,7 +305,7 @@
     padding: 11px 7px 11px 10px;
   }
   .page-footer__subscribe-submit {
-    padding: 12px 38px;
+    padding: 11px 38px;
   }
   .page-footer__wrapper--map .page-footer__subscribe,
   .page-footer__wrapper--zoos .page-footer__subscribe {
@@ -312,46 +316,20 @@
   }
   .page-footer__donate-link {
     padding: 16px 49px;
-    margin-left: 14px;
   }
   .page-footer__social {
-    margin-right: 166px;
+    margin-right: 160px;
   }
-  .page-footer__social-link {
-    padding-left: 52px;
-  }
-  .page-footer__social-link::before {
-    left: 14px;
-  }
-  .page-footer__social-link--facebook {
-    &::after {
-      left: 23px;
-    }
-  }
-  .page-footer__social-link--twitter {
-    &::after {
-      left: 20px;
-    }
-  }
-  .page-footer__social-link--instagram {
-    &::after {
-      left: 19px;
-    }
-  }
-  .page-footer__social-link--youtube {
-    &::after {
-      left: 18px;
-    }
-  }
+
   .page-footer__nav-list {
     justify-content: flex-start;
   }
-  .page-footer__nav-link {
+
+  .page-footer__nav-item {
     margin-right: 48px;
   }
-  .page-footer__copyright {
-    padding-bottom: 4px;
-  }
+
+
 }
 
 @media (max-width: $tablet-width) {

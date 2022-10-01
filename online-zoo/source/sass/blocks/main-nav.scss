@@ -43,9 +43,9 @@
 }
 
 @media (max-width: $small-desktop-width) {
-  .main-nav {
-    width: 488px;
-  }
+.main-nav__item:not(.main-nav__item--designed) {
+  margin-right: 48px;
+}
 }
 
 @media (max-width: $tablet-width) {

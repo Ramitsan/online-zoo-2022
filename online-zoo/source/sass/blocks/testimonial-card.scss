@@ -8,6 +8,7 @@
   box-sizing: border-box;
   background-clip: padding-box;
   cursor: pointer;
+
   &::after {
     content: "";
     position: absolute;
@@ -76,6 +77,7 @@
 .testimonial-card__user-local {
   position: relative;
   margin-right: 16px;
+
   &::after {
     content: ".";
     position: absolute;
@@ -104,10 +106,13 @@
     height: 387px;
     margin-right: 32px;
   }
+
   .testimonial-card__text {
     width: 260px;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 18px;
   }
+
   .testimonial-card blockquote {
     margin: 12px 15px;
   }
@@ -120,9 +125,11 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   .testimonial-card__text {
     width: 100%;
   }
+
   .testimonial-card blockquote {
     height: 84px;
     overflow: hidden;
@@ -134,8 +141,8 @@
   .testimonial-card {
     margin-bottom: 20px;
   }
+
   .testimonial-card blockquote {
     margin: 10px 10px 10px 12px;
   }
 }
-
