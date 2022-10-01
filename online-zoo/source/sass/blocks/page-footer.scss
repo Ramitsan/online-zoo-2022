@@ -427,6 +427,7 @@
     height: inherit;
     align-items: center;
     margin-top: 19px;
+    margin-bottom: 2px;
   }
   .page-footer__logo-image {
     width: 127px;
@@ -436,6 +437,7 @@
     order: 2;
     flex-direction: row;
     margin-right: 160px;
+    margin-bottom: 24px;
   }
   .page-footer__social-link {
     &::before {
@@ -478,39 +480,18 @@
     }
   }
   .page-footer__subscribe {
-    display: flex;
-    order: 3;
-    margin-right: -9px;
-    margin-top: 28px;
-    align-items: center;
+    display: none;
   }
-  .page-footer__wrapper--map .page-footer__subscribe,
-  .page-footer__wrapper--zoos .page-footer__subscribe {
-    margin-right: -9px;
-  }
-  .page-footer__subscribe-title {
-    margin-right: 0;
-    font-size: 16px;
-    line-height: 140%;
-    margin-right: 22px;
-    margin-top: 8px;
-  }
-  .page-footer__subscribe-container {
-    margin-top: 11px;
-    margin-right: 7px;
-    margin-bottom: 13px;
-  }
-  .page-footer__subscribe-container input {
-    margin-bottom: 8px;
-  }
+ 
   .page-footer__donate {
     order: 4;
-    margin-bottom: 48px;
+    margin-bottom: 34px;
     margin-top: 40px;
+    margin-left: -2px;
     align-self: center;
   }
   .page-footer__donate-link {
-    padding: 16px 45px;
+    padding: 16px 50px;
   }
   .page-footer__copyright {
     order: 5;
@@ -520,6 +501,7 @@
     font-weight: 200;
     font-size: 15px;
     line-height: 120%;
+    padding-top: 12px;
   }
   .page-footer__nav {
     order: 6;
@@ -527,13 +509,17 @@
   .page-footer__nav-list {
     width: 100%;
     margin-bottom: 18px;
-    margin-top: 41px;
+    margin-top: 30px;
   }
   .page-footer__nav-link {
     margin-right: 0;
   }
+ 
   .page-footer__nav-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .page-footer__nav-item:last-child {
+    margin-right: 0;
   }
 }
 

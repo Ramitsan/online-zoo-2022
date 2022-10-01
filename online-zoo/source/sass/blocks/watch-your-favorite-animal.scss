@@ -124,9 +124,9 @@
 
 @media (max-width: $mobile-width) {
   .watch-your-favorite-animal {
-    padding-bottom: 40px;
+    padding-bottom: 41px;
     background-image: url("../assets/img/giant-panda_mobile.jpg");
-    background-position: center 33px;
+    background-position: center 34px;
   }
 
   .watch-your-favorite-animal__wrapper {
@@ -138,6 +138,7 @@
   .watch-your-favorite-animal__title {
     width: 128px;
     font-size: 28px;
+    line-height: 21px;
     margin-top: 42px;
     margin-right: 1px;
 
@@ -152,7 +153,7 @@
   .watch-your-favorite-animal__btn {
     width: 100%;
     position: absolute;
-    padding: 14px 95px;
+    padding: 14px 90px;
     top: 216px;
     z-index: 100;
   }

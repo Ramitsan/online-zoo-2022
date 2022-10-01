@@ -106,7 +106,7 @@
     padding-bottom: 0;
     background-image: url("../assets/img/flower_bg_mobile.png");
     background-size: 35px 225px;
-    background-position: right 40px;
+    background-position: right 38px;
   }
   .backstage__wrapper {
     width: 93%;
@@ -117,23 +117,24 @@
   .backstage__title {
     width: 100%;
     font-size: 24px;
-    margin-top: 62px;
+    margin-top: 60px;
     margin-bottom: 10px;
     margin-left: 0;
   }
   .backstage__subtitle {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .backstage__text {
-    margin-top: 11px;
+    margin-top: 10px;
   }
   .backstage__text--one {
-    line-height: 130%;
+    line-height: 21px;
   }
   .backstage__text--two {
-    line-height: 140%;
+    line-height: 22px;
+    margin-top: 0;
   }
   .backstage__text--two br {
     display: block;
