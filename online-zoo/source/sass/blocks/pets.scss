@@ -487,7 +487,7 @@
 @media (max-width: $tablet-width) {
   .pets {
     padding-top: 48px;
-    padding-bottom: 115px;
+    padding-bottom: 116px;
     background-image: url("../assets/img/palm_bg_tablet.png"), url("../../assets/img/strelitzia_desktop.png");
     background-size: 134px 202px, 175px 131px;
   }
@@ -497,6 +497,7 @@
   .pets__slider {
     height: 826px;
     align-items: flex-start;
+    margin-bottom: 4px;
   }
   .pets__list {
     overflow: hidden;

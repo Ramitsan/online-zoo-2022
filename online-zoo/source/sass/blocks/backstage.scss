@@ -70,11 +70,11 @@
 
 @media (max-width: $tablet-width) {
   .backstage {
-    padding-top: 19px;
+    padding-top: 36px;
     padding-bottom: 15px;
     background-image: url("../assets/img/flower_bg_tablet.png");
     background-repeat: no-repeat;
-    background-position: right -32px;
+    background-position: right -13px;
     background-size: 132px 484px;
   }
   .backstage__wrapper {
@@ -94,9 +94,9 @@
     margin-top: 16px;
   }
   .backstage__subtitle {
-    margin-top: 31px;
+    margin-top: 29px;
     margin-left: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 

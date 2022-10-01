@@ -31,6 +31,7 @@
   text-transform: uppercase;
   color: $white;
   z-index: 100;
+
   &::before {
     content: "";
     position: absolute;
@@ -59,10 +60,12 @@
     background-image: url("../assets/img/giant-panda_small-desktop.jpg");
     background-position: center -80px
   }
+
   .watch-your-favorite-animal__wrapper {
     width: 100%;
     max-width: 940px;
   }
+
   .watch-your-favorite-animal__title {
     width: 400px;
     font-size: 85px;
@@ -70,6 +73,7 @@
     margin-top: 44px;
     margin-right: 55px;
     margin-bottom: 39px;
+
     &::before {
       width: 367px;
       height: 367px;
@@ -77,6 +81,7 @@
       right: 92px;
     }
   }
+
   .watch-your-favorite-animal__btn {
     margin-right: 108px;
     padding: 15px 91px;
@@ -86,29 +91,33 @@
 @media (max-width: $tablet-width) {
   .watch-your-favorite-animal {
     padding-top: 33px;
-    padding-bottom: 66px;
+    padding-bottom: 48px;
     background-image: url("../assets/img/giant-panda_tablet.jpg");
-    background-position: center -26px;
+    background-position: -2px -8px;
   }
+
   .watch-your-favorite-animal__wrapper {
     max-width: 600px;
   }
+
   .watch-your-favorite-animal__title {
     width: 255px;
     font-size: 54px;
+    line-height: 41px;
     margin-top: 48px;
     margin-right: -3px;
     margin-bottom: 0;
     &::before {
-      width: 237px;
-      height: 237px;
-      top: -36px;
-      right: 55px;
+      width: 238px;
+      height: 238px;
+      top: -37px;
+      right: 54px;
     }
   }
+
   .watch-your-favorite-animal__btn {
     margin-top: -7px;
-    padding: 15px 96px;
+    padding: 15px 91px;
     align-self: flex-start;
   }
 }
@@ -119,16 +128,19 @@
     background-image: url("../assets/img/giant-panda_mobile.jpg");
     background-position: center 33px;
   }
+
   .watch-your-favorite-animal__wrapper {
     max-width: 300px;
     position: relative;
     overflow: visible;
   }
+
   .watch-your-favorite-animal__title {
     width: 128px;
     font-size: 28px;
     margin-top: 42px;
     margin-right: 1px;
+
     &::before {
       width: 119px;
       height: 119px;
@@ -136,6 +148,7 @@
       right: 26px;
     }
   }
+
   .watch-your-favorite-animal__btn {
     width: 100%;
     position: absolute;
@@ -144,4 +157,3 @@
     z-index: 100;
   }
 }
-
