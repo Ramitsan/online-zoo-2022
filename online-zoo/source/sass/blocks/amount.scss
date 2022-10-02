@@ -42,3 +42,9 @@
 .amount__icon {
     margin-left: 148px;
 }
+
+@media (max-width: $small-desktop-width) {
+    .amount {       
+        padding: 40px 255px 32px;
+    }
+}

@@ -6,3 +6,11 @@
     background-position: center -342px;
     background-size: cover;
 }
+
+@media (max-width: $small-desktop-width) {
+    .donate-top-photo {
+        width: 155%;
+        height: 390px;
+        background-position: -155px -320px;
+    }
+}
