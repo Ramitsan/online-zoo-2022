@@ -140,14 +140,16 @@
 }
 
 // styles for page Donate
-.pick-and-feed--donate  {
+.pick-and-feed--donate {
   padding-top: 5px;
   padding-bottom: 180px;
 }
-.pick-and-feed__wrapper--donate {  
+
+.pick-and-feed__wrapper--donate {
   padding: 40px 92px 46px;
 }
-.pick-and-feed__container {
+
+.pick-and-feed__container--donate {
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
@@ -193,81 +195,92 @@
     padding-top: 30px;
     padding-bottom: 50px;
   }
+
   .pick-and-feed__wrapper {
     max-width: 940px;
     padding-top: 30px;
     padding-bottom: 50px;
   }
+
   .pick-and-feed__subtitle {
     width: 854px;
     margin-top: 22px;
     margin-bottom: 20px;
   }
+
   .pick-and-feed__subtitle,
   .pick-and-feed__info,
   .pick-and-feed__text {
     margin-left: 50px;
   }
+
   .pick-and-feed__info,
   .pick-and-feed__text {
     width: 810px;
   }
+
   .pick-and-feed__info {
     font-weight: 500;
     line-height: 130%;
   }
+
   .pick-and-feed__text-link {
     padding-bottom: 0;
   }
+
   .pick-and-feed__caption {
     margin-top: 40px;
   }
+
   .pick-and-feed__list {
     padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 54px;
   }
+
   .pick-and-feed__item p {
     margin-top: 30px;
   }
+
   .pick-and-feed__item:not(:last-of-type)::after {
     top: 23%;
     left: 196px;
   }
 
   // styles for page Donate
-.pick-and-feed--donate  {
-  padding-bottom: 30px;
-}
+  .pick-and-feed--donate {
+    padding-bottom: 30px;
+  }
 
-.pick-and-feed__container {
-  width: 940px;
-}
-.pick-and-feed__slogan {
-  width: 778px;
-  margin-top: 10px;
-}
+  .pick-and-feed__container--donate {
+    width: 940px;
+  }
 
-.pick-and-feed__information {
-  width: 99%;
-  margin-top: 30px;
-}
+  .pick-and-feed__slogan {
+    width: 778px;
+    margin-top: 10px;
+  }
 
-.pick-and-feed__inforamtion-title {
-  margin-bottom: 41px;
-}
+  .pick-and-feed__information {
+    width: 99%;
+    margin-top: 30px;
+  }
 
-.pick-and-feed__wrapper--donate {  
-  width: 940px;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
+  .pick-and-feed__inforamtion-title {
+    margin-bottom: 41px;
+  }
 
-.pick-and-feed__subtitle {
-  margin-top: 11px;
-  margin-left: 47px;
-}
+  .pick-and-feed__wrapper--donate {
+    width: 940px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .pick-and-feed__subtitle {
+    margin-top: 11px;
+    margin-left: 47px;
+  }
 
 }
 
@@ -276,32 +289,39 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .pick-and-feed__wrapper {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 60px;
   }
+
   .pick-and-feed__subtitle,
   .pick-and-feed__info,
   .pick-and-feed__text {
     width: 95%;
     margin-left: 0;
   }
+
   .pick-and-feed__title {
     font-size: 42px;
   }
+
   .pick-and-feed__subtitle,
   .pick-and-feed__info,
   .pick-and-feed__text {
     margin-left: 20px;
   }
+
   .pick-and-feed__subtitle {
     font-size: 22px;
   }
+
   .pick-and-feed__caption {
     margin-top: 28px;
     margin-bottom: 20px;
   }
+
   .pick-and-feed__list {
     width: 100%;
     margin-top: -1px;
@@ -310,11 +330,14 @@
     justify-content: center;
     padding: 0;
   }
+
   .pick-and-feed__container-img {
     width: 168px;
   }
+
   .pick-and-feed__item:not(:last-of-type) {
     margin-right: 42px;
+
     &::after {
       background-image: url("../assets/icons/green-arrow_tablet.png");
       background-size: 89px 29px;
@@ -325,32 +348,38 @@
       z-index: 100;
     }
   }
+
   // styles for page Donate
   .pick-and-feed--donate {
     padding-bottom: 46px;
-  } 
-   
-  .pick-and-feed__container {
+  }
+
+  .pick-and-feed__container--donate {
     width: 600px;
   }
+
   .pick-and-feed__slogan {
     width: 600px;
     font-size: 24px;
     line-height: 29px;
   }
+
   .pick-and-feed__information {
     margin-top: 20px;
   }
+
   .pick-and-feed__inforamtion-title {
     margin-top: 28px;
     margin-bottom: 28px;
   }
+
   .pick-and-feed__title--donate {
     font-size: 48px;
     line-height: 58px;
     margin-left: 0;
     margin-top: 20px;
   }
+
   .pick-and-feed__subtitle--donate {
     font-size: 24px;
     line-height: 29px;
@@ -358,6 +387,7 @@
     margin-left: 15px;
     margin-top: 21px;
   }
+
   .pick-and-feed__wrapper--donate {
     padding-bottom: 15px;
   }
@@ -368,18 +398,22 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .pick-and-feed__wrapper {
     width: 94%;
     padding-top: 21px;
     padding-bottom: 40px;
   }
+
   .pick-and-feed__title {
     font-size: 24px;
   }
+
   .pick-and-feed__info,
   .pick-and-feed__text {
     display: none;
   }
+
   .pick-and-feed__subtitle {
     width: 100%;
     font-size: 18px;
@@ -387,18 +421,21 @@
     margin-top: 10px;
     margin-left: 0px;
   }
+
   .pick-and-feed__caption {
     margin-top: 22px;
     margin-bottom: 18px;
     font-size: 24px;
     line-height: 120%;
   }
+
   .pick-and-feed__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .pick-and-feed__list {
     width: 170px;
     flex-direction: column;
@@ -407,9 +444,11 @@
     margin-top: 0;
     margin-left: 40px;
   }
+
   .pick-and-feed__item:last-of-type {
     margin-right: 42px;
   }
+
   .pick-and-feed__item:not(:last-of-type) {
     &::after {
       background-image: url("../assets/icons/green-arrow_tablet.png");
@@ -422,21 +461,66 @@
       transform: rotate(83deg);
     }
   }
+
   .pick-and-feed__item p {
     margin-top: 10px;
     margin-bottom: 41px;
   }
+
   .pick-and-feed__item:nth-child(2) {
     &::after {
       top: 79%;
       transform: rotate(85deg);
     }
   }
+
   .pick-and-feed__item:nth-child(2) p {
     margin-bottom: 30px;
   }
+
   .pick-and-feed__link {
     padding: 14px 70px;
     width: 300px;
+  }
+
+  // styles for page Donate
+  .pick-and-feed__container--donate {
+    width: 300px;
+  }
+
+  .pick-and-feed__slogan {
+    width: 298px;
+  }
+
+  .pick-and-feed__information {
+    width: 100%;
+    margin-top: 10px;
+    line-height: 22px;
+  }
+
+  .pick-and-feed__inforamtion-title {
+    align-self: flex-start; 
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+  .pick-and-feed__wrapper--donate {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .pick-and-feed__title--donate {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+  }
+  .pick-and-feed__subtitle--donate {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 9px;
+  }
+  .pick-and-feed__share {
+    font-size: 15.9px;
+    text-align: left;
   }
 }

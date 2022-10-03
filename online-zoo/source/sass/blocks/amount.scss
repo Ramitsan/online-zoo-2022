@@ -61,3 +61,32 @@
     }
   }
 }
+
+@media (max-width: $mobile-width)  {
+  .amount {
+    padding: 0;
+    padding-left: 33px;
+  }
+  .amount__number {
+    margin-top: 58px;
+    font-size: 40px;
+    line-height: 32px;
+    &::before {
+      font-size: 9px;
+      bottom: -12px;
+      left: -76px;
+    }
+    &::after {
+      bottom: 19px;
+      left: 62px;
+      width: 7.8px;
+      height: 7.8px;
+      background-size: 7.8px 7.8px;
+    }
+}
+.amount__icon {
+  margin-left: 84px;
+  width: 161px;
+  height: auto;
+}
+}

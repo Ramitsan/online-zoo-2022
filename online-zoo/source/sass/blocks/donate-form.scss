@@ -186,67 +186,129 @@
   .donate-form__title {
     margin-left: 65px;
   }
+
   .donate-form__progress {
     width: 810px;
     margin-left: 65px;
   }
+
   .donate-form__line {
     width: 780px;
     left: 2%;
   }
+
   .donate-form__container {
     width: 810px;
   }
+
   .donate-form__item--five-thousand {
     display: none;
   }
+
   .donate-form__label {
     width: 30px;
     height: 30px;
   }
+
   .donate-form__radio-input+.donate-form__label::before {
     top: 32%;
   }
-  .donate-form__radio-input:checked+.donate-form__label::after  {
+
+  .donate-form__radio-input:checked+.donate-form__label::after {
     left: -12%;
     top: -14%;
   }
+
   .donate-form__price {
     top: 47px;
     left: -3px;
   }
 }
 
-@media (max-width: $tablet-width)  {
+@media (max-width: $tablet-width) {
   .donate-form__title {
     margin-left: 10px;
     margin-bottom: 7px;
-}
+  }
+
   .donate-form__progress {
     width: 600px;
     margin-left: 0;
   }
+
   .donate-form__line {
     width: 524px;
     left: 6%;
   }
+
   .donate-form__container {
     width: 550px;
-}
+  }
+
   .donate-form__item--two-thousand,
   .donate-form__item--one-thousand {
     display: none;
   }
+
   .donate-form__price {
     top: 48px;
     left: -11px;
+  }
+
+  .donate-form__number-input {
+    width: 180px;
+    height: 42px;
+  }
+
+  .donate-form__period-item {
+    margin-top: 32px;
+    margin-bottom: 28px;
+  }
 }
-.donate-form__number-input {
-  width: 180px;
-  height: 42px;
+
+@media (max-width: $mobile-width) {
+  .donate-form__title {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+  .donate-form__container {
+    width: 292px;
 }
-.donate-form__period-item {
-  margin-top: 32px;
-  margin-bottom: 28px;
-}
+  .donate-form__progress {
+    width: 300px;
+    height: 14px;
+    margin-bottom: 49px;
+  }
+
+  .donate-form__line {
+    width: 262px;
+  }
+  .donate-form__radio-input+.donate-form__label::before {
+    width: 5px;
+    height: 5px;
+    top: 40%;
+  }
+  .donate-form__radio-input:checked+.donate-form__label::after {
+    left: 10%;
+    top: 14%;    
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-image: url(../assets/icons/roller_icon_mobile.png);
+  }
+  .donate-form__price {
+    font-size: 13px;
+    line-height: 18px;
+    top: 28px;
+    left: 2px;
+  }
+  .donate-form__number-input {
+    padding-left: 6px;
+  }
+  .donate-form__period-item {
+    margin-top: 24px;
+  }
+  .donate-form__period-label {
+    left: -4px;
+  }
 }
