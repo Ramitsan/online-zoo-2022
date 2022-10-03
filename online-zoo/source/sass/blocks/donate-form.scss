@@ -216,3 +216,37 @@
     left: -3px;
   }
 }
+
+@media (max-width: $tablet-width)  {
+  .donate-form__title {
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+  .donate-form__progress {
+    width: 600px;
+    margin-left: 0;
+  }
+  .donate-form__line {
+    width: 524px;
+    left: 6%;
+  }
+  .donate-form__container {
+    width: 550px;
+}
+  .donate-form__item--two-thousand,
+  .donate-form__item--one-thousand {
+    display: none;
+  }
+  .donate-form__price {
+    top: 48px;
+    left: -11px;
+}
+.donate-form__number-input {
+  width: 180px;
+  height: 42px;
+}
+.donate-form__period-item {
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+}

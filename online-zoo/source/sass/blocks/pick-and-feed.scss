@@ -325,6 +325,42 @@
       z-index: 100;
     }
   }
+  // styles for page Donate
+  .pick-and-feed--donate {
+    padding-bottom: 46px;
+  } 
+   
+  .pick-and-feed__container {
+    width: 600px;
+  }
+  .pick-and-feed__slogan {
+    width: 600px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .pick-and-feed__information {
+    margin-top: 20px;
+  }
+  .pick-and-feed__inforamtion-title {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .pick-and-feed__title--donate {
+    font-size: 48px;
+    line-height: 58px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .pick-and-feed__subtitle--donate {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 21px;
+  }
+  .pick-and-feed__wrapper--donate {
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: $mobile-width) {

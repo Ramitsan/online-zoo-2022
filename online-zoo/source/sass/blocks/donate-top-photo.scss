@@ -9,8 +9,21 @@
 
 @media (max-width: $small-desktop-width) {
     .donate-top-photo {
-        width: 155%;
         height: 390px;
-        background-position: -155px -320px;
+        background-image: url("../assets/img/giant-panda_donate_small-desktop.jpg");
+        background-position: center;
     }
+}
+
+@media (max-width: $tablet-width) {
+    .donate-top-photo {
+        height: 369px;
+        background-image: url("../assets/img/giant-panda_donate_tablet.jpg");
+    }   
+}
+
+@media (max-width: $mobile-width) {
+    .donate-top-photo {
+        background-image: url("../assets/img/giant-panda_donate_mobile.jpg");
+    }    
 }
