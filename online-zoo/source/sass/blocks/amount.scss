@@ -51,7 +51,9 @@
 
 @media (max-width: $tablet-width) {
   .amount {
-    padding: 30px 86px 25px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 132px 25px 178px;
   }
   .amount__number {
     margin-top: 106px;

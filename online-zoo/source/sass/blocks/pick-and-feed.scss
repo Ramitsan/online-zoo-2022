@@ -213,6 +213,10 @@
   .pick-and-feed__text {
     margin-left: 50px;
   }
+  
+.pick-and-feed__subtitle--index {
+  margin-top: 22px;
+}
 
   .pick-and-feed__info,
   .pick-and-feed__text {
@@ -277,7 +281,7 @@
     padding-bottom: 30px;
   }
 
-  .pick-and-feed__subtitle {
+  .pick-and-feed__subtitle--donate {
     margin-top: 11px;
     margin-left: 47px;
   }
@@ -355,7 +359,7 @@
   }
 
   .pick-and-feed__container--donate {
-    width: 600px;
+    width: 93%;
   }
 
   .pick-and-feed__slogan {
@@ -485,7 +489,7 @@
 
   // styles for page Donate
   .pick-and-feed__container--donate {
-    width: 300px;
+    width: 94%;
   }
 
   .pick-and-feed__slogan {
@@ -521,6 +525,6 @@
   }
   .pick-and-feed__share {
     font-size: 15.9px;
-    text-align: left;
+    text-align: center;
   }
 }
