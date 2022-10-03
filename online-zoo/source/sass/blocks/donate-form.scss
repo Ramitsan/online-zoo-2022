@@ -250,6 +250,10 @@
     display: none;
   }
 
+  .donate-form__radio-input+.donate-form__label::before {
+    left: 38%;
+  }
+
   .donate-form__price {
     top: 48px;
     left: -11px;
@@ -271,9 +275,11 @@
     margin-left: 0;
     margin-top: 4px;
   }
+
   .donate-form__container {
     width: 292px;
-}
+  }
+
   .donate-form__progress {
     width: 300px;
     height: 14px;
@@ -283,31 +289,37 @@
   .donate-form__line {
     width: 262px;
   }
+
   .donate-form__radio-input+.donate-form__label::before {
     width: 5px;
     height: 5px;
     top: 40%;
   }
+
   .donate-form__radio-input:checked+.donate-form__label::after {
     left: 10%;
-    top: 14%;    
+    top: 14%;
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
     background-image: url(../assets/icons/roller_icon_mobile.png);
   }
+
   .donate-form__price {
     font-size: 13px;
     line-height: 18px;
     top: 28px;
     left: 2px;
   }
+
   .donate-form__number-input {
     padding-left: 6px;
   }
+
   .donate-form__period-item {
     margin-top: 24px;
   }
+
   .donate-form__period-label {
     left: -4px;
   }
