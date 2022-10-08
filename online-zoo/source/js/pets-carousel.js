@@ -147,7 +147,7 @@ const getAnimalsElements = (arr) => {
     }    
   }
 
-  console.log(sixCardsMap);
+  console.log(sixCardsMap.size);
   return sixCardsMap;
 }
 

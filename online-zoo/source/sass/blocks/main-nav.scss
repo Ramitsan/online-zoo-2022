@@ -27,6 +27,7 @@
   color: $white;
   font-weight: 500;
   cursor: pointer;
+
   &:active {
     opacity: 0.7;
   }
@@ -43,9 +44,9 @@
 }
 
 @media (max-width: $small-desktop-width) {
-.main-nav__item:not(.main-nav__item--designed) {
-  margin-right: 48px;
-}
+  .main-nav__item:not(.main-nav__item--designed) {
+    margin-right: 48px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -54,60 +55,86 @@
     z-index: 1000;
     top: 0;
     right: 0;
-    width: 320px;
+    width: 100%;
+    height: 330px;
     margin: 0px;
+    background-color: $white;
+    padding-left: 0;
   }
+
   .main-nav--closed {
     position: fixed;
     right: -500px;
     transform: translateX(100%);
     transition: all .7s ease-out;
   }
+
   .main-nav--opened {
     position: fixed;
     right: 0;
     transform: translateX(0%);
     transition: all .7s ease-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 66px;
+      height: 42px;
+      background-image: url("../assets/img/logo_open-menu_tablet.png");
+      background-repeat: no-repeat;
+      background-size: 66px 42px;
+      z-index: 100;
+    }
   }
+
   .main-nav__toggle {
     position: absolute;
     background-color: transparent;
     width: 45px;
     height: 35px;
     top: 0px;
-    right: 0px;
+    right: -20px;
     z-index: 3000;
     display: block;
     cursor: pointer;
     padding: 0;
     outline: none;
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../assets/icons/burger_menu_tablet.png");
-      background-repeat: no-repeat;
-      left: 6px;
-      top: 10px;
-      width: 18px;
-      height: 10px;
-    }
+    background-image: url("../../assets/icons/burger_menu_tablet.png");
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+    background-size: 18px 10px;
   }
+
   .main-nav__list {
     width: 320px;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 250px;
+    margin-top: 76px;
     margin-bottom: 213px;
   }
+
   .main-nav__item {
-    padding-top: 10px;
-    padding-bottom: 52px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 9px;
   }
+
   .main-nav__link {
     display: block;
+    color: $main-text-color;
+    padding-bottom: 0;
   }
+
   .main-nav__link--active {
-    padding-bottom: 13px;
+    color: $orange;
+  }
+
+  .main-nav__item--designed {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -119,4 +146,3 @@
     }
   }
 }
-
