@@ -1,5 +1,5 @@
-// import Animals from './const.js';
-// import {generateRandomElement} from './utils';
+// import {Animals} from '../js/const.js';
+// import {generateRandomElement} from '../js/utils.js';
 
 const Animals = [
   {
@@ -112,7 +112,7 @@ const Animals = [
   },
 ];
 
-//utils.js
+// utils.js
 // генерация случайного числа в заданном интервале, включительно
 const getRandomInteger = (a = 0, b = 1) => {
   const lower = Math.ceil(Math.min(a, b));
@@ -127,9 +127,7 @@ const generateRandomElement = (arr) => {
   return arr[index];
 };
 
-const petsListOne = document.querySelector('.pets__list--one');
-const petsListTwo = document.querySelector('.pets__list--two');
-const petsListThree = document.querySelector('.pets__list--three');
+const petsListsElements = document.querySelectorAll('.pets__list');
 const desktopPetsCount = 6;
 
 
@@ -141,13 +139,13 @@ const getAnimalsElements = (arr) => {
   for(let i = 0; i < sixCardsMap.length; i++) {
     const item = generateRandomElement(arr);
     if(sixCardsMap.has(item.id)) {
-      return;
+      i--;
+      continue;
     } else {
       sixCardsMap.set(item.id, item);
     }    
   }
 
-  console.log(sixCardsMap.size);
   return sixCardsMap;
 }
 
@@ -175,24 +173,19 @@ function generateCard(animal) {
 // для каждого из 6 элементов отрисовываем разметку с данными
 const renderCards = (container) => { 
   const cards = getAnimalsElements(Animals);
-  console.log(cards);
   const arr2 = [];
 
   for (const card of cards.values()) { 
-    const elem = generateCard(card);
-    arr2.push(elem);   
+    const elem = generateCard(card);   
+    arr2.push(elem); 
   }
-
   container.innerHTML = [...arr2].join(''); 
 }
 
-renderCards(petsListOne);
-renderCards(petsListTwo);
-renderCards(petsListThree);
+petsListsElements.forEach(item => renderCards(item));
 
 
 // слайдер в блоке Pets
-const petsListsElements = document.querySelectorAll('.pets__list');
 const btnLeft = document.querySelector('.pets__button--left');
 const btnRight = document.querySelector('.pets__button--right');
 let currentItem = 0;

@@ -21,7 +21,7 @@ function toggleMenuMobile() {
 function openMenu() {
   mainNav.classList.remove('main-nav--closed');
   mainNav.classList.add('main-nav--opened');
-  mainNavToggle.style.backgroundImage = 'url(../../assets/icons/x_icon.png)';
+  mainNavToggle.style.backgroundImage = 'url(../assets/icons/x_icon.png)';
   mainNavToggle.style.backgroundSize = '14px 14px';
   document.body.style.overflowY = 'hidden';
   createOverlay();
@@ -30,7 +30,7 @@ function openMenu() {
 function closeMenu() {
   mainNav.classList.add('main-nav--closed');
   mainNav.classList.remove('main-nav--opened');
-  mainNavToggle.style.backgroundImage = 'url(../../assets/icons/burger_menu_tablet.png)';
+  mainNavToggle.style.backgroundImage = 'url(../assets/icons/burger_menu_tablet.png)';
   mainNavToggle.style.backgroundSize = '18px 10px';
   document.body.style.overflowY = 'visible';
   removeOverlay();
