@@ -27,7 +27,7 @@ export const Animals = [
         id: 'cheetahs',
         name: 'Cheetahs',
         country: 'Native to Africa',
-        image: 'assets/img/leopards_desktop.jpg',
+        image: 'assets/img/cheetahs_desktop.jpg',
     },
     {
         id: 'penguins',

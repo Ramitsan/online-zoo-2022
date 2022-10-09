@@ -42,7 +42,6 @@ function generateCard(animal) {
   );
 };
 
-
 // для каждого из 6 элементов отрисовываем разметку с данными
 const renderCards = (container) => { 
   const cards = getAnimalsElements(Animals);
@@ -57,8 +56,7 @@ const renderCards = (container) => {
 
 petsListsElements.forEach(item => renderCards(item));
 
-
-// слайдер в блоке Pets
+// перелистывание слайдов в блоке Pets
 const btnLeft = document.querySelector('.pets__button--left');
 const btnRight = document.querySelector('.pets__button--right');
 let currentItem = 0;
@@ -72,7 +70,7 @@ function hideItem(direction) {
   isEnabled = false;
   petsListsElements[currentItem].classList.add(direction);
   petsListsElements[currentItem].addEventListener('animationend', function () {
-    this.classList.remove('pets__list--active', direction);
+    this.classList.remove('pets__list--active', direction);    
   })
 }
 
@@ -82,29 +80,31 @@ function showItem(direction) {
     this.classList.remove('pets__list--next', direction);
     this.classList.add('pets__list--active');
     isEnabled = true;
-  })
+  })  
 }
 
 function previosItem(n) {
   hideItem('to-right');
   changeCurrentItem(n - 1);
-  showItem('from-left');
+  showItem('from-left'); 
 }
 
 function nextItem(n) {
   hideItem('to-left');
   changeCurrentItem(n + 1);
-  showItem('from-right');
+  showItem('from-right'); 
 }
 
 btnLeft.addEventListener('click', function () {
-  if (isEnabled) {
+  if (isEnabled) {     
     previosItem(currentItem);
+    renderCards(petsListsElements[currentItem]);
   }
 })
 
 btnRight.addEventListener('click', function () {
-  if (isEnabled) {
-    nextItem(currentItem);
+  if (isEnabled) { 
+    nextItem(currentItem);  
+    renderCards(petsListsElements[currentItem]);
   }
 });
