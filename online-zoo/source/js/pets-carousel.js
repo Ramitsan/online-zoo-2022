@@ -1,152 +1,25 @@
-// import {Animals} from '../js/const.js';
-// import {generateRandomElement} from '../js/utils.js';
-
-const Animals = [
-  {
-    id: 'pandas',
-    name: 'giant Pandas',
-    country: 'Native to Southwest China',
-    image: 'assets/img/pandas_desktop.jpg',
-  },
-  {
-    id: 'eagles',
-    name: 'Eagles',
-    country: 'Native to South America',
-    image: 'assets/img/eagles_desktop.jpg',
-  },
-  {
-    id: 'gorillas',
-    name: 'Gorillas',
-    country: 'Native to Congo',
-    image: 'assets/img/gorillas_desktop.jpg',
-  },
-  {
-    id: 'sloth',
-    name: 'Two-toed Sloth',
-    country: 'Mesoamerica, South America',
-    image: 'assets/img/sloth-animal_desktop.jpg',
-  },
-  {
-    id: 'cheetahs',
-    name: 'Cheetahs',
-    country: 'Native to Africa',
-    image: 'assets/img/cheetahs_desktop.jpg',
-  },
-  {
-    id: 'penguins',
-    name: 'Penguins',
-    country: 'Native to Antarctica',
-    image: 'assets/img/penguins_desktop.jpg',
-  },
-  {
-    id: 'fox',
-    name: 'Fox',
-    country: 'Native to Europe',
-    image: 'assets/img/fox_desktop.jpg',
-  },
-  {
-    id: 'elephant',
-    name: 'Elephant',
-    country: 'Native to Africa',
-    image: 'assets/img/elephant_desktop.jpg',
-  },
-  {
-    id: 'kangaroo',
-    name: 'Kangaroo',
-    country: 'Native to Australia',
-    image: 'assets/img/kangaroo_desktop.jpg',
-  },
-  {
-    id: 'koala',
-    name: 'Koala',
-    country: 'Native to Australia',
-    image: 'assets/img/koala_desktop.jpg',
-  },
-  {
-    id: 'parrots',
-    name: 'Parrots',
-    country: 'Native to Australia',
-    image: 'assets/img/parrots_desktop.jpg',
-  },
-  {
-    id: 'zebra',
-    name: 'Zebra',
-    country: 'Native to Africa',
-    image: 'assets/img/zebra_desktop.jpg',
-  },
-  {
-    id: 'squirrel',
-    name: 'Squirrel',
-    country: 'Native to Europe',
-    image: 'assets/img/squirrel_desktop.jpg',
-  },
-  {
-    id: 'bear',
-    name: 'Bear',
-    country: 'Native to Europe',
-    image: 'assets/img/bear_desktop.jpg',
-  },
-  {
-    id: 'boar',
-    name: 'Boar',
-    country: 'Native to Europe',
-    image: 'assets/img/boar_desktop.jpg',
-  },
-  {
-    id: 'bison',
-    name: 'Bison',
-    country: 'Native to Europe',
-    image: 'assets/img/bison_desktop.jpg',
-  },
-  {
-    id: 'owl',
-    name: 'Owl',
-    country: 'Native to Europe',
-    image: 'assets/img/owl_desktop.jpg',
-  },
-  {
-    id: 'deer',
-    name: 'Deer',
-    country: 'Native to Europe',
-    image: 'assets/img/deer_desktop.jpg',
-  },
-];
-
-// utils.js
-// генерация случайного числа в заданном интервале, включительно
-const getRandomInteger = (a = 0, b = 1) => {
-  const lower = Math.ceil(Math.min(a, b));
-  const upper = Math.floor(Math.max(a, b));
-
-  return Math.floor(lower + Math.random() * (upper - lower + 1));
-};
-
-// генерация случайного элемента из массива
-const generateRandomElement = (arr) => {
-  const index = getRandomInteger(0, arr.length - 1);
-  return arr[index];
-};
+import {Animals} from '../js/const.js';
+import {generateRandomElement} from '../js/utils.js';
 
 const petsListsElements = document.querySelectorAll('.pets__list');
 const desktopPetsCount = 6;
 
-
 // получаем из массива Animals 6 случайных элементов и записываем их в Map
 const getAnimalsElements = (arr) => {
-  const sixCardsMap = new Map();
-  sixCardsMap.length = desktopPetsCount;
+  const randomAnimalsMap = new Map();
+  randomAnimalsMap.length = desktopPetsCount;
 
-  for(let i = 0; i < sixCardsMap.length; i++) {
+  for(let i = 0; i < randomAnimalsMap.length; i++) {
     const item = generateRandomElement(arr);
-    if(sixCardsMap.has(item.id)) {
+    if(randomAnimalsMap.has(item.id)) {
       i--;
       continue;
     } else {
-      sixCardsMap.set(item.id, item);
+      randomAnimalsMap.set(item.id, item);
     }    
   }
 
-  return sixCardsMap;
+  return randomAnimalsMap;
 }
 
 // генерируем одну карточку
@@ -173,13 +46,13 @@ function generateCard(animal) {
 // для каждого из 6 элементов отрисовываем разметку с данными
 const renderCards = (container) => { 
   const cards = getAnimalsElements(Animals);
-  const arr2 = [];
+  const cardsArr = [];
 
   for (const card of cards.values()) { 
     const elem = generateCard(card);   
-    arr2.push(elem); 
+    cardsArr.push(elem); 
   }
-  container.innerHTML = [...arr2].join(''); 
+  container.innerHTML = [...cardsArr].join(''); 
 }
 
 petsListsElements.forEach(item => renderCards(item));
