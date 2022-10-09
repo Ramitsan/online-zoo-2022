@@ -1,6 +1,6 @@
-export const Animals = [
+const Animals = [
     {
-        id: 'panda',
+        id: 'pandas',
         name: 'giant Pandas',
         country: 'Native to Southwest China',
         image: 'assets/img/pandas_desktop.jpg',
@@ -109,3 +109,8 @@ export const Animals = [
     },
 ];
 
+const mediaQuerySmalldesktop = window.matchMedia('(max-width: 1599px)');
+const mediaQueryTablet = window.matchMedia('(max-width: 999px)');
+const mediaQueryMobile = window.matchMedia('(max-width: 639px)');
+
+export {Animals, mediaQuerySmalldesktop, mediaQueryTablet, mediaQueryMobile};

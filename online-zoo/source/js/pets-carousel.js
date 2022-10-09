@@ -1,13 +1,16 @@
-import {Animals} from '../js/const.js';
+import {Animals, mediaQueryTablet} from '../js/const.js';
 import {generateRandomElement} from '../js/utils.js';
 
 const petsListsElements = document.querySelectorAll('.pets__list');
-const desktopPetsCount = 6;
+const petsCountDefault = 6;
+const petsCountForTablet = 4;
+
 
 // получаем из массива Animals 6 случайных элементов и записываем их в Map
 const getAnimalsElements = (arr) => {
   const randomAnimalsMap = new Map();
-  randomAnimalsMap.length = desktopPetsCount;
+
+  randomAnimalsMap.length = mediaQueryTablet.matches ? petsCountForTablet : petsCountDefault;
 
   for(let i = 0; i < randomAnimalsMap.length; i++) {
     const item = generateRandomElement(arr);
