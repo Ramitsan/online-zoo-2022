@@ -96,7 +96,7 @@
                   </p>
                   <p class="donate-form__item donate-form__item--one-thousand">
                     <input class="donate-form__radio-input visually-hidden" type="radio" value="1000" id="radio-1000"
-                      name="donate-input" checked>
+                      name="donate-input">
                     <label class="donate-form__label" for="radio-1000"></label>
                     <span class="donate-form__price">$1000</span>
                   </p>
@@ -114,7 +114,7 @@
                   </p>
                   <p class="donate-form__item donate-form__item--one-hundred">
                     <input class="donate-form__radio-input visually-hidden" type="radio" value="100" id="radio-100"
-                      name="donate-input">
+                      name="donate-input" checked>
                     <label class="donate-form__label" for="radio-100"></label>
                     <span class="donate-form__price">$100</span>
                   </p>
@@ -135,7 +135,7 @@
             </div>
 
             <div class="donate-form__another-amount">              
-                <input class="donate-form__number-input" type="number" id="another-amount" name="another-amount" min="1" max="9999" maxlength="4" placeholder="Another amount" oninput="if (value.length>4) value = value.slice(0,4)">
+                <input class="donate-form__number-input" type="number" id="another-amount" name="another-amount" min="1" max="9999" maxlength="4" placeholder="" oninput="if (value.length>4) value = value.slice(0,4)">
                 <label for="another-amount" class="donate-form__label-number"></label>             
               <div class="donate-form__period">
                 <p class="donate-form__period-item">
@@ -209,8 +209,8 @@
     </div>
   </footer>
   <!-- Footer [END] -->
-<script src="js/burger-menu.js"></script>
-<script src="js/script.js"></script>
+<script type="module" src="js/burger-menu.js"></script>
+<script type="module" src="js/donate.js"></script>
 </body>
 
 </html>
