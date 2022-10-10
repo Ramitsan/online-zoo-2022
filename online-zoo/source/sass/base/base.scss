@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  position: relative;
 }
 
 a {
@@ -49,4 +50,15 @@ img {
 .btn {
   border: 1px solid transparent;
   vertical-align: middle;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(41, 41, 41, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
 }

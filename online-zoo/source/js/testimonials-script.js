@@ -3,7 +3,7 @@ import { generateRandomElement, getRandomArray, initUid } from '../js/utils.js';
 const AUTHOR_AVATARS = ['user_icon1.png', 'user_icon2.png', 'user_icon3.png', 'user_icon4.png', 'user_icon5.png', 'user_icon6.png',
   'user_icon7.png', 'user_icon8.png', 'user_icon9.png', 'user_icon10.png', 'user_icon11.png'];
 const AUTHOR_NAMES = ['Michael John', 'Oskar Samborsky', 'Fredericka Michelin', 'Mila Riksha', 'John Doe', 'Tim Macoveev'];
-const AUTHOR_LOCALS = ['Local Austria', 'Local Sweden', 'Local Norway', 'Local Portugal', 'Local Brazil'];
+const AUTHOR_LOCALS = ['Austria', 'Sweden', 'Norway', 'Portugal', 'Brazil'];
 const DATES = ['Today', 'Yesterday', 'Two days ago', 'Last month', 'Last year'];
 const TESTIMONIAL_TEXTS = ['The best online zoo I’ve met. My son delighted very much ljves to watch gorillas.',
   'Online zoo is one jf the ways to instill a love for animals. The best online zoo I’ve met.',
@@ -96,10 +96,7 @@ window.addEventListener('resize', (e) => {
 function changeRangeInput() {
   testimonialsList.style.transition = "transform 0.4s ease-in-out";
   slideIndex = +testimonialsInputRange.value;
-  testimonialsList.style.transform = 'translateX(' + ((-cardWidth + -gap) * slideIndex) + 'px)'; 
-  // testimonialsList.style.transform = `translateX((${cardWidth} + ${gap}) * ${slideIndex})px)`; 
+  testimonialsList.style.transform = 'translateX(' + ((-cardWidth + -gap) * slideIndex) + 'px)';
 }
 
 testimonialsInputRange.addEventListener('mousemove', changeRangeInput);
-
-

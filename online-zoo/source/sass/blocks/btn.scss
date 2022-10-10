@@ -8,3 +8,19 @@
   border-radius: 5px;
   color: $black;
 }
+
+.button--close {
+  position: fixed;
+  background-color: transparent;
+  right: 5%;
+  top: 5%;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border: 1px solid transparent;
+  background-image: url("../../assets/icons/x_icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
+}
