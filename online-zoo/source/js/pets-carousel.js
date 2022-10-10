@@ -57,6 +57,7 @@ const renderCards = (container) => {
   container.innerHTML = [...cardsArr].join(''); 
 }
 
+// генерация карточек на старте
 petsListsElements.forEach(item => renderCards(item));
 
 // перелистывание слайдов в блоке Pets
@@ -101,6 +102,7 @@ function nextItem(n) {
 btnLeft.addEventListener('click', function () {
   if (isEnabled) {     
     previosItem(currentItem);
+    // генерация карточек при перелистывании
     renderCards(petsListsElements[currentItem]);
   }
 })
@@ -108,6 +110,7 @@ btnLeft.addEventListener('click', function () {
 btnRight.addEventListener('click', function () {
   if (isEnabled) { 
     nextItem(currentItem);  
+     // генерация карточек при перелистывании
     renderCards(petsListsElements[currentItem]);
   }
 });

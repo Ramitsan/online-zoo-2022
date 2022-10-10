@@ -12,5 +12,30 @@ const generateRandomElement = (arr) => {
     return arr[index];
   };
 
-  export {generateRandomElement};
+  const shuffle = (arr) => {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const swap = arr[j];
+      arr[j] = arr[i];
+      arr[i] = swap;
+    }
+    return arr;
+  };
+  
+  // генерация массива случайных элементов из другого массива
+  const getRandomArray = (arr) => {
+    const newArray = arr.slice();
+    return shuffle(newArray).splice(0, getRandomInteger(1, newArray.length + 1));
+  };
+
+  //функция для генерации айдишников
+  const initUid = (prefix) => {
+    let count = 0;
+    return () => {
+      count++;
+      return prefix + count;
+    };
+  }
+
+  export {generateRandomElement, getRandomArray, initUid};
   
