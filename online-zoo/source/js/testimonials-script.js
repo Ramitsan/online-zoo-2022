@@ -153,7 +153,7 @@ function createButtonClose() {
   return buttonElement;
 }
 
-if(mediaQueryTablet) {
+if(mediaQueryTablet.matches) {
   testimonialsItems.forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
