@@ -1,4 +1,5 @@
 import { generateRandomElement, getRandomArray, initUid } from '../js/utils.js';
+import { mediaQueryTablet } from '../js/const.js';
 
 const AUTHOR_AVATARS = ['user_icon1.png', 'user_icon2.png', 'user_icon3.png', 'user_icon4.png', 'user_icon5.png', 'user_icon6.png',
   'user_icon7.png', 'user_icon8.png', 'user_icon9.png', 'user_icon10.png', 'user_icon11.png'];
@@ -100,3 +101,64 @@ function changeRangeInput() {
 }
 
 testimonialsInputRange.addEventListener('mousemove', changeRangeInput);
+
+
+// // открытие попапа при клике на отзыв
+const testimonialsItems = document.querySelectorAll('.testimonials__item');
+const body = document.querySelector('body');
+let overlay;
+let popup;
+let buttonClose;
+
+function openPopup(testimonial) {
+  document.body.style.overflowY = 'hidden';
+
+  popup = document.createElement('div');
+  popup.classList.add('testimonials__popup');
+  const testimonialCopy = testimonial.cloneNode(true);
+  popup.appendChild(testimonialCopy);
+
+  overlay = createOverlay();
+  buttonClose = createButtonClose();
+
+  popup.appendChild(buttonClose);
+  overlay.appendChild(popup);
+  body.appendChild(overlay); 
+
+  overlay.addEventListener('click', closePopup);
+  buttonClose.addEventListener('click', closePopup);
+};
+
+
+function closePopup(e) {
+  if (e.target === overlay || e.target === buttonClose) {
+    body.style.overflowY = 'visible';   
+    buttonClose.remove();
+    popup.remove();
+    overlay.remove();
+    overlay.removeEventListener('click', closePopup);
+    buttonClose.removeEventListener('click', closePopup);
+  }
+};
+
+function createOverlay() {
+  let overlayElement = document.createElement('div');
+  overlayElement.classList.add('overlay');
+  return overlayElement;
+}
+
+function createButtonClose() {
+  let buttonElement = document.createElement('button');
+  buttonElement.classList.add('button--close');
+  return buttonElement;
+}
+
+if(mediaQueryTablet) {
+  testimonialsItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      openPopup(item);
+    });
+  });  
+}
+
