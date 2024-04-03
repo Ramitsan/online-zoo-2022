@@ -1,0 +1,168 @@
+.animal-info {
+  text-align: left;
+  padding-bottom: 181px;
+  background-image: url("../assets/img/strelitzia_desktop2.png"), url("../assets/img/leav_bg_desktop2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 306px 229px, 215px 292px;
+}
+
+.animal-info__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.animal-info__wrapper hr {
+  margin-top: 20px;
+}
+
+.animal-info__title {
+  @include second-level-headings();
+  font-weight: 500;
+  color: $green;
+  margin-bottom: 25px;
+}
+
+.animal-info__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animal-info__foto {
+  width: 422px;
+  height: 421px;
+}
+
+.animal-info__text-block {
+  width: 668px;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+.animal-info__annotation {
+  margin-top: -42px;
+  margin-bottom: 56px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  color: #ababab;
+}
+
+.animal-info__link {
+  border-radius: 25px;
+  padding: 15px 75px;
+}
+
+.animal-info__annotation a,
+.description-animal__text a {
+  text-decoration: none;
+  color: $green;
+}
+
+@media (max-width: $small-desktop-width) {
+  .animal-info {
+    padding-bottom: 140px;
+    background-image: url("../assets/img/strelitzia_small-desktop2.png"), url("../assets/img/leav_bg_small-desktop2.png");
+    background-position: left bottom, right bottom;
+    background-size: 187px 139px, 169px 171px;
+  }
+  .animal-info__wrapper {
+    max-width: 940px;
+  }
+  .animal-info__foto {
+    width: 455px;
+    height: 458px;
+  }
+  .animal-info__header {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .animal-info__text-block {
+    width: 455px;
+    margin-left: 27px;
+    margin-top: 42px;
+  }
+  .animal-info__annotation {
+    font-size: 22px;
+    line-height: 143%;
+    margin-bottom: 108px;
+  }
+  .animal-info__link {
+    padding: 15px 74px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .animal-info {
+    padding-bottom: 148px;
+    background-image: url("../assets/img/strelitzia_tablet2.png"), url("../assets/img/leave_zoos_tablet.png");
+    background-size: 144px 107px, 126px 104px;
+  }
+  .animal-info__wrapper {
+    max-width: 600px;
+  }
+  .animal-info__wrapper hr {
+    display: none;
+  }
+  .animal-info__title {
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  .animal-info__header {
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 58px;
+  }
+  .animal-info__foto {
+    width: 391px;
+    height: 393px;
+  }
+  .animal-info__text-block {
+    width: 420px;
+    margin-left: 0;
+    margin-top: 66px;
+  }
+  .animal-info__annotation {
+    margin-bottom: 55px;
+  }
+  .animal-info__link {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    margin-left: -152px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .animal-info {
+    padding-bottom: 80px;
+    background-size: 85px 63px, 65px 66px;
+  }
+  .animal-info__wrapper {
+    max-width: 100%;
+  }
+  .animal-info__title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  .animal-info__foto {
+    max-width: 100%;
+    height: auto;
+  }
+  .animal-info__text-block {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 55px;
+  }
+  .animal-info__annotation {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: normal;
+    margin-bottom: 45px;
+  }
+}

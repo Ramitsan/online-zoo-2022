@@ -1,0 +1,140 @@
+.animal-page__camera {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 76px;
+  position: relative;
+}
+
+.animal-page__wrapper {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.animal-page__title {
+  @include second-level-headings();
+  color: $main-text-color;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.animal-page__iframe {
+  width: 1162px;
+  height: 652px;
+}
+
+.animal-page__donate {
+  width: 100%;
+  height: 390px;
+  background-size: cover;
+  background-position: top center;
+}
+
+.animal-page__donate--panda {
+  background-image: url("../assets/img/panda_bg_desktop.png");
+}
+
+.animal-page__donate--gorilla {
+  background-image: url("../assets/img/gorilla_bg_desktop.jpg");
+}
+
+.animal-page__donate--eagle {
+  background-image: url("../assets/img/eagle_bg_desktop.jpg");
+}
+
+.animal-page__donate--alligator {
+  background-image: url("../assets/img/alligator_bg_desktop.jpg");
+}
+
+.animal-page__donate a {
+  display: inline-block;
+  margin-top: 276px;
+  border-radius: 25px;
+  padding: 15px 117px;
+}
+
+@media (max-width: $small-desktop-width) {
+  .animal-page__camera {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 61px;
+  }
+  .animal-page__wrapper {
+    max-width: 940px;
+    align-items: flex-end;
+  }
+  .animal-page__title {
+    align-self: flex-start;
+    margin-left: 120px;
+  }
+  .animal-page__iframe {
+    width: 778px;
+    height: 438px;
+    margin-right: 30px;
+  }
+  .animal-page__donate--panda {
+    background-image: url("../assets/img/panda_bg_small-desktop.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .animal-page__camera {
+    padding-top: 54px;
+    padding-bottom: 20px;
+  }
+  .animal-page__wrapper {
+    max-width: 600px;
+  }
+  .animal-page__title {
+    font-size: 36px;
+    line-height: 130%;
+    margin-left: 52px;
+    margin-bottom: 11px;
+  }
+  .animal-page__iframe {
+    width: 495px;
+    height: 278px;
+    margin-right: 20px;
+  }
+  .animal-page__donate {
+    height: 288px;
+  }
+  .animal-page__donate--panda {
+    background-image: url("../assets/img/panda_bg_tablet.jpg");
+  }
+  .animal-page__donate a {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .animal-page__camera {
+    padding-bottom: 41px;
+  }
+  .animal-page__wrapper {
+    max-width: 300px;
+    align-items: flex-start;
+  }
+  .animal-page__title {
+    font-size: 24px;
+    line-height: 120%;
+    margin-left: 0;
+  }
+  .animal-page__iframe {
+    width: 300px;
+    height: 168px;
+    margin-right: 0px;
+  }
+  .animal-page__donate {
+    height: 220px;
+  }
+  .animal-page__donate--panda {
+    background-image: url("../assets/img/panda_bg_mobile.jpg");
+  }
+  .animal-page__donate a {
+    margin-top: 156px;
+  }
+}
