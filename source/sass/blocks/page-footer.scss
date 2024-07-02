@@ -279,10 +279,7 @@
   .page-footer__wrapper {
     max-width: 940px;
   }
-  .page-footer__wrapper--map,
-  .page-footer__wrapper--zoos {
-    margin-left: 17px;
-  }
+
   .page-footer__logo {
     flex-grow: 0;
     margin: 0;
@@ -306,10 +303,6 @@
   }
   .page-footer__subscribe-submit {
     padding: 11px 38px;
-  }
-  .page-footer__wrapper--map .page-footer__subscribe,
-  .page-footer__wrapper--zoos .page-footer__subscribe {
-    margin-right: 23px;
   }
   .page-footer__donate {
     margin-top: 34px;
