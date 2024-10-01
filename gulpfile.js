@@ -39,6 +39,7 @@ gulp.task("css", function () {
     gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
     gulp.watch("source/assets/icon-*.svg", gulp.series("sprite", "html", "refresh"));
     gulp.watch("source/*.html", gulp.series("html", "refresh"));
+    gulp.watch("source/**/*.js", gulp.series("copy", "html", "refresh"));
   });
   
   gulp.task("refresh", function (done) {
