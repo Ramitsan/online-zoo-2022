@@ -14,14 +14,19 @@ previewsCollection.forEach(item => {
 });
 
 // карусель превью видео
-const gap = 300; // ширина превью + отступ справа
+const carouselGap = 30;
+const getSlideWidth = () => {
+  return  previewsCollection[0].getBoundingClientRect().width + carouselGap;
+}
 
+console.log(223);
 const carousel = document.querySelector('.watch-online__frame-box'),
   content = document.querySelector('.watch-online__previews'),
   buttonRight = document.querySelector('.watch-online__button--right'),
   buttonLeft = document.querySelector('.watch-online__button--left');
 
 buttonRight.addEventListener('click', () => {
+  const gap = getSlideWidth();
   carousel.scrollBy(gap, 0);
   if (carousel.scrollWidth !== 0) {
     buttonLeft.style.opacity = 1;
@@ -31,6 +36,7 @@ buttonRight.addEventListener('click', () => {
   }
 });
 buttonLeft.addEventListener('click', () => {
+  const gap = getSlideWidth();
   carousel.scrollBy(-(gap), 0);
   if (carousel.scrollLeft - gap <= 0) {
     buttonLeft.style.opacity = 0.5;
